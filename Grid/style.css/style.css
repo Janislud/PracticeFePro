@@ -1,0 +1,85 @@
+
+
+.grid-container {
+    height: 800px;
+    display: grid;
+    grid-template-columns: minmax(100px, 200px) minmax(100px, 300px) minmax(100px, 300px);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+  }
+  
+  .grid-item {
+    background: rgb(161, 238, 128);
+    padding: 10px;
+  }
+  
+  .item1 {
+    background: rgb(232, 114, 114);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /* grid-column: 2/4; */
+  }
+  
+  .item5 {
+    background: rgb(138, 114, 232);
+    /* grid-column-start: 1; */
+    grid-column: -4 / -1;
+    /* grid-column: 2/4; */
+  }
+  
+  .item8 {
+    background: rgb(242, 229, 42);
+    grid-row-start: 4;
+    grid-row-end: 6;
+  }
+
+
+
+
+  /* .grid-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 25px 30px;
+    grid-template-columns: repeat(4, 100px);
+    grid-row: 15px;
+    grid-template-columns: 2fr 100px 4fr minmax(200px, auto); 
+    grid template colums razsidivajet po kalonkam i razmeru
+    grid-template-rows: 1fr 100px 5fr;  
+    grid-template-row  v visatu razhirajet
+    row-gap: 20px;
+    column-gap: 20px;
+    height: 800px;
+    
+    fraction - относительная величина 1fr / 2fr etc.
+      minmax()
+        repeat(4, величина(абсолютная или относительная)
+    
+    }
+    
+    .grid-item {
+        padding: 10px;
+        background-color: aqua;
+    }
+    
+    .item1 {
+    background-color: red;
+    grid-column-start: -3;
+    grid-column-end: 4;
+    grid-column: 1/4;
+    }
+    
+    
+    .item5 {
+        background-color: yellow;
+        grid-column-start: 1;
+        grid-column: -4/4;
+    }
+    
+    
+    .item6 {
+        background-color: blue;
+        grid-row-start: 6;
+        grid-row-end: 12;
+        grid-column: 2/3;
+    }
+     */
